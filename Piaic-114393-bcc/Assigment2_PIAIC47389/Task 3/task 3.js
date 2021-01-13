@@ -52,10 +52,22 @@
 //     }
 // output ('true')
 
-
 // f
 // if("car" < "cat"){
 
 //     alert("car is smaller than cat");
 //     }
 // output ("car is smaller than cat")
+
+const obj = {
+    name: 'M Afzaal Afzal',
+    age: 20,
+    learning: {
+        no1: 'programming',
+        no2: 'DSA'
+    }
+}
+
+const { name: newName, age, learning: { no1, no2 } } = obj;
+
+console.log(newName, age);
